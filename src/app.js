@@ -122,11 +122,9 @@ class App extends Component {
       }
     ],
     languages: [
-      {
-        Ukrainian: '(Native or bilingual proficiency)',
-        Russian: '(Native or bilingual proficiency)',
-        English: '(Professional working proficiency)',
-      }
+      { Ukrainian: '(Native or bilingual proficiency)' },
+      { Russian: '(Native or bilingual proficiency)' },
+      { English: '(Professional working proficiency)' },
     ]
   }
   render() {

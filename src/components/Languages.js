@@ -11,7 +11,7 @@ class Languages extends Component {
         <div className="card-body">
           <ul className="list">
             {languages.map((language, idx) => {
-              return <li key={idx} className="mb-2 col-md-4">
+              return <li key={idx} className="mb-2">
                 {Object.entries(language).map(([key, val]) => {
                   return <div key={key}>
                     <strong className="text-muted">{key}:</strong> <span className="font-weight-light">{val}</span>
