@@ -1,0 +1,68 @@
+$theme-colors: ('primary': #6e00ff);
+
+$body-bg: #1E1E1E;
+$body-color: #fff;
+$font-family-serif: 'Titillium Web',
+sans-serif;
+$text-muted: #9a9a9a;
+$font-weight-light: 100;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-size: 1rem;
+}
+
+body {
+  font-family: $font-family-serif;
+}
+
+nav {
+  background-color: #e14eca;
+  font-size: .9rem;
+
+  a {
+    color: #fff;
+
+    &.active {
+      background-color: #1E1E1E;
+    }
+
+    .material-icons {
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.card {
+  background-color: #2d2f46;
+  border: 0;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .2);
+
+  .card-header {
+    background: none;
+  }
+}
